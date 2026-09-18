@@ -1,0 +1,15 @@
+services:
+  tower-crash:
+    build: .
+    container_name: tower-crash-rehearsal
+    ports:
+      - "3001:3001"
+    volumes:
+      - crane-data:/app/server/data
+    environment:
+      - PORT=3001
+      - DB_PATH=/app/server/data/crane.db
+    restart: unless-stopped
+
+volumes:
+  crane-data:

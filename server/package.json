@@ -1,0 +1,17 @@
+{
+  "name": "tower-crash-rehearsal-server",
+  "version": "1.0.0",
+  "description": "塔吊作业冲突预演平台 - 后端 API 与冲突检测引擎",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "node --test test/"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "sql.js": "^1.12.0"
+  }
+}
